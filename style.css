@@ -1,0 +1,98 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+/*  background: #b3b3b3; */
+}
+main{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+}
+.container{
+  padding:14px;
+  width:300px;
+  height:450px;
+  overflow: scroll;
+  display: inline-flex;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  background:white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ background: #f1ebeb;
+}
+.container input{
+  height:38px !important;
+  padding:9px;
+  border:none;
+}
+.container input:focus{
+  outline:none;
+  border:none;
+}
+/* .h{
+  background:white;
+} */
+header{
+  display: flex;
+  border:1px solid black;
+  width:100%;
+  border-radius: 5px;  
+  position:sticky;
+  top:0;
+  background:white;
+}
+header img{
+  width:25px;
+  padding-left:5px;
+}
+header input{  
+  font-size: 16px;
+  font-family: monospace;
+}
+section img{
+  height:60px;
+  width:50px;
+  margin:9px;
+  border-radius: 5px;
+}
+section div{
+    font-size: 16px;
+    margin-top: 19px;
+    float: right;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.notop{
+  padding-top:0;
+  animation:paddin 0.07s linear 1;
+}
+.top{  
+  padding-top:14px;
+  animation:paddinn 0.07s linear 1;
+}
+@keyframes paddin{
+  from{
+    padding-top:14px;
+  }
+  to{
+    padding-top:0px;
+  }
+}
+@keyframes paddinn{
+  from{
+    padding-top:0px;
+  }
+  to{
+    padding-top:14px;
+  }
+}
+
